@@ -1,0 +1,21 @@
+.site-header {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 100%;
+    text-align: center;
+    background-color: $header-background-colour;
+    color: $header-font-colour;
+}
+
+.header-title {
+    margin: 0;
+    padding: 0.7rem;
+    font-size: 1.4rem;
+}
+
+.title {
+    margin-top: 0;
+    font-family: $title-font;
+    font-size: 2.4rem;
+    border-bottom: 1px solid #ccc;
+}

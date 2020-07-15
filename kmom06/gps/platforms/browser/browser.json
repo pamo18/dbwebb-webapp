@@ -1,0 +1,36 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {
+      "*-Info.plist": {
+        "parents": {
+          "NSLocationWhenInUseUsageDescription": [
+            {
+              "xml": "<string>I will use your GPS position to show on a map.</string>",
+              "count": 1,
+              "mode": "merge",
+              "id": "config.xml"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "se.dbwebb.hello"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "se.dbwebb.hello"
+    }
+  },
+  "dependent_plugins": {},
+  "modules": [],
+  "plugin_metadata": {
+    "cordova-plugin-whitelist": "1.3.3",
+    "cordova-plugin-geolocation": "4.0.1"
+  }
+}

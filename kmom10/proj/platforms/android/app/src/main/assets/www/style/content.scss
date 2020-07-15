@@ -1,0 +1,206 @@
+.home {
+    width: 100%;
+}
+
+.content {
+    overflow: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.content.page {
+    min-height: 1050px;
+    background-color: white;
+    border-radius: none;
+    padding-top: 0;
+    padding-bottom: 2em;
+}
+
+.result {
+    float: left;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    background-color: $table-tr-background;
+}
+
+.result:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.event-frame-img {
+    margin: 0;
+    padding: 0;
+    margin-right: 4px;
+    float: left;
+    height: 100%;
+    width: 150px;
+
+    img {
+        height: 100%;
+        width: 100%;
+        border-radius: none;
+    }
+}
+
+.event-frame-txt {
+    height: 100%;
+    overflow: auto;
+    position: relative;
+    padding: 4px;
+
+    a {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+p.summary,
+p.station-heading,
+p.service-list {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+p.summary,
+p.station-heading {
+    font-size: 0.8rem;
+}
+
+p.service-list {
+    font-size: 0.7rem;
+}
+
+p.summary  {
+    height: 80px;
+}
+
+p.summary,
+.event-frame-txt {
+    overflow: hidden;
+}
+
+
+p.service-list-heading {
+    font-size: 0.8rem;
+    margin-top: 6px;
+    margin-bottom: 3px;
+}
+
+p.time-cat {
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: 4px;
+    left: 4px;
+    margin-bottom: 4px;
+}
+
+.details {
+    text-align: center;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+p.region-stats {
+    font-weight: bold;
+    margin-bottom: 4px;
+    padding: 0;
+}
+
+@media (max-width: 390px) {
+    p.summary {
+        height: 60px;
+    }
+
+    p.summary,
+    p.station-heading,
+    p.service-list-heading,
+    p.time-cat,
+    p.service-list {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 320px) {
+    p.summary,
+    p.station-heading,
+    p.service-list-heading,
+    p.time-cat,
+    p.service-list {
+        font-size: 0.5rem;
+    }
+
+    p.service-list-heading {
+        margin: 0;
+    }
+}
+
+@media (min-width: 800px) {
+    .content {
+        overflow: inherit;
+        padding: 0;
+    }
+
+    .content.page {
+        min-height: 975px;
+        padding-left: 1em;
+        padding-right: 1em;
+        border-radius: 10px;
+    }
+
+    .result {
+        height: 200px;
+    }
+
+    .event-frame-img {
+        width: 355px;
+        margin-right: 12px;
+    }
+
+    .event-frame-txt {
+        padding: 12px;
+    }
+
+    p.summary  {
+        height: auto;
+    }
+
+    p.summary,
+    p.station-heading {
+        font-size: 1.5rem;
+    }
+
+    p.service-list,
+    p.time-cat,
+    p.service-list-heading {
+        font-size: 1.2rem;
+    }
+
+    p.service-list-heading {
+        margin-top: 12px;
+        margin-bottom: 6px;
+    }
+
+    p.time-cat {
+        left: 12px;
+        bottom: 20px;
+    }
+
+    .details {
+        text-align: left;
+    }
+
+    .result:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}

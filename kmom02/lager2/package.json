@@ -1,0 +1,23 @@
+{
+  "name": "lager2",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack -d",
+    "watch": "webpack -d --watch",
+    "style": "sass base.scss style.min.css",
+    "style-min": "sass base.scss style.min.css --style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  },
+  "dependencies": {
+    "sass": "^1.17.4"
+  },
+  "description": ""
+}

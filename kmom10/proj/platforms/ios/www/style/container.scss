@@ -1,0 +1,36 @@
+.container {
+    position: relative;
+    top: 45px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 3rem;
+    overflow: hidden;
+}
+
+.container.has-scroll-bar {
+    top: 95px;
+}
+
+.container p {
+    line-height: 1.4;
+    font-size: 1.2rem;
+}
+
+.container img {
+    width: 100%;
+}
+
+@media (min-width: 800px) {
+    .container {
+        margin: 0 auto;
+        max-width: 1100px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 2.4rem;
+        top: 120px;
+    }
+
+    .container.has-scroll-bar {
+        top: 210px;
+    }
+}

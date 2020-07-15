@@ -1,0 +1,48 @@
+html {
+    font-size: 100%;
+    background-color: $background-colour;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body {
+    line-height: $line-height;
+}
+
+main {
+    padding: 1.4rem 0.6rem;
+}
+
+h1,
+h2,
+h4 {
+    margin-top: 0;
+    font-family: $heading-font;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin-bottom: 2.8rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.4rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+    font-family: $paragraph-font;
+    margin-bottom: 1.4rem;
+    font-size: $body-font-size;
+}
+
+body {
+    font-family: $body-font;
+}

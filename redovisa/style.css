@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans|Bitter|Source+Sans+Pro');
+
+
+html {
+    font-size: 100%;
+}
+
+body {
+    line-height: 1.4;
+    background-color: #ebe5d5;
+}
+
+main {
+    padding: 1.4rem 0.6rem;
+}
+
+h1,
+h2,
+h4 {
+    margin-top: 0;
+    font-family: 'Bitter', sans-serif;
+}
+
+h1 {
+    font-size: 2.4rem;
+    margin-bottom: 2.8rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.4rem;
+}
+
+h4 {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+    font-family: 'Droid Sans', serif;
+    margin-bottom: 1.4rem;
+    font-size: 1rem;
+}
+
+body {
+    font-family: 'Lora', sans-serif;
+}
+
+figure {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.title {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2.4rem;
+    border-bottom: 1px solid #ccc;
+    margin-top: 0;
+}
+
+.container {
+    padding: 1rem;
+    margin-bottom: 3.2rem;
+}
+
+.container p {
+    line-height: 1.4;
+    font-size: 1.2rem;
+}
+
+.container img {
+    width: 100%;
+}
+
+.webapp {
+    width: 100%;
+}
+
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    background: white;
+    display: flex;
+    flex-flow: row || nowrap;
+    justify-content: space-evenly;
+}
+
+.bottom-nav a {
+    text-align: center;
+    color: #666;
+}
+
+.bottom-nav a.active {
+    color: blue;
+}
+
+.bottom-nav i {
+    display: block;
+}
+
+.bottom-nav span {
+    font-size: 0.7rem;
+}
+
+@media (min-width: 800px) {
+    .container {
+        margin: 0 auto;
+        max-width: 1100px;
+    }
+
+    .container img {
+        border-radius: 10px;
+    }
+
+    .container .me {
+        width: 300px;
+        float: left;
+        margin-right: 1em;
+        margin-bottom: 1em;
+    }
+
+    .container .webapp {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .bottom-nav {
+        position: relative;
+        border-bottom: 1px solid #ccc;
+        border-top: none;
+        bottom: auto;
+        top: 0;
+    }
+
+    figure {
+        clear: both;
+    }
+
+    .container figure .manchester {
+        width: 100%;
+    }
+}

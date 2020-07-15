@@ -1,0 +1,108 @@
+table.tabel-results {
+    box-sizing: border-box;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+
+    tr {
+        height: 50px;
+        background-color: $table-tr-background;
+        border: 12px solid $background-colour;
+        border-spacing: 1cm 2em;
+    }
+}
+
+table.tabel-results {
+    tr:nth-of-type(2n) {
+        background-color: #eee;
+    }
+}
+
+table.tabel-results th {
+    border-bottom: 2px solid black;
+    background-color: $header-background-colour;
+    color: $header-font-colour;
+    font-size: 1.4rem;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+table.tabel-results td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    word-wrap: break-word;
+    font-size: 1em;
+}
+
+.red {
+    color: red;
+}
+
+@media only screen and (min-width: 800px) {
+    table.tabel-results {
+        tr:hover:not(:first-child) {
+            background-color: $table-tr-background-hover;
+            color: $table-tr-colour;
+        }
+        tr:hover a {
+            color: $table-tr-colour-hover;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    table.tabel-results {
+        display: block;
+        border-spacing: none;
+
+        tr {
+            display: block;
+            height: auto;
+        }
+
+        tr:not(:last-child) {
+            margin-bottom: 12px;
+        }
+
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+        td {
+            display: block;
+            border: none;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 50%;
+            white-space: normal;
+            text-align:right;
+        }
+
+        td:before {
+            /* För att visa tabell rubrik */
+            content: attr(data-title);
+            /* Använder top och left för efterlikna padding */
+            position: absolute;
+            top: 0.33rem;
+            left: 0.33rem;
+            width: 45%;
+            padding-right: 0.55rem;
+            white-space: nowrap;
+            text-align:left;
+            font-weight: bold;
+        }
+
+        tr.touch-row {
+            background-color: $table-tr-background;
+            color: $table-tr-colour;
+
+            a {
+                color: $table-tr-colour-hover;
+            }
+        }
+    }
+}

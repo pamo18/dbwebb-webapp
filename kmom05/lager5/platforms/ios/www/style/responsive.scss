@@ -1,0 +1,37 @@
+@media (min-width: 800px) {
+    .bottom-nav {
+        position: relative;
+        border-bottom: 1px solid #ccc;
+        border-top: none;
+    }
+
+    .container {
+        margin: 0 auto;
+        max-width: 1100px;
+    }
+
+    .container img {
+        border-radius: 10px;
+    }
+
+    .container .warehouse {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .input,
+    .input-label {
+        width: 100%;
+    }
+
+    .add-product {
+        margin-left: 0 ;
+    }
+}
+
+@media (max-width: 425px) {
+    .input,
+    .input-label {
+        width: 17rem;
+    }
+}

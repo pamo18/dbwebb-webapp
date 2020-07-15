@@ -1,0 +1,80 @@
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    overflow: hidden;
+    border-top: 1px solid #ccc;
+    width: 100%;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    background: $background;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    z-index: 2;
+}
+
+.bottom-nav a {
+    text-decoration: none;
+    text-align: center;
+    color: $nav-colour;
+}
+
+.bottom-nav a.active {
+    color: $nav-colour-active;
+}
+
+.bottom-nav i {
+    display: block;
+}
+
+.bottom-nav span {
+    font-size: 0.7rem;
+}
+
+.options-nav {
+    overflow-x: auto;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    margin-bottom: 1rem;
+    background: $background;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.options-nav a {
+    display: inline-block;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    margin-left: 0.6rem;
+    margin-right: 0.6rem;
+    font-size: 1rem;
+    text-decoration: none;
+    text-align: center;
+    color: $nav-colour;
+}
+
+.options-nav a.active {
+    color: $nav-colour-active;
+}
+
+.options-nav a.underline {
+    border-bottom: 2px solid $nav-colour-active;
+}
+
+.options-nav i {
+    display: block;
+}
+
+.options-nav span {
+    font-size: 0.7rem;
+}
+
+@media (min-width: 800px) {
+    .options-nav a {
+        font-size: 1.5rem;
+    }
+}

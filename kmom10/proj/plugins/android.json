@@ -1,0 +1,33 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "se.dbwebb.pamo18"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "se.dbwebb.pamo18"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "se.dbwebb.pamo18"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "se.dbwebb.pamo18"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "se.dbwebb.pamo18"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "se.dbwebb.pamo18"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "se.dbwebb.pamo18"
+    }
+  },
+  "dependent_plugins": {}
+}

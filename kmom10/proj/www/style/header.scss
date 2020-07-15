@@ -1,0 +1,30 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+}
+
+.site-header {
+    position: relative;
+    height: 60px;
+    padding: 0.4rem;
+    width: 100%;
+    text-align: center;
+    background-color: $header-background-colour;
+    color: $header-font-colour;
+}
+
+.header-title {
+    width: 100%;
+    padding-top: 1.2rem;
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+@media (min-width: 800px) {
+    .header-title {
+        padding: 0;
+        font-size: 2.4rem;
+    }
+}

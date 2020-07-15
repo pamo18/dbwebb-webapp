@@ -1,0 +1,34 @@
+@media (min-width: 800px) {
+    .bottom-nav {
+        position: relative;
+        bottom: auto;
+        border-top: none;
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+    }
+
+    .options-nav {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .container .home {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .input,
+    .input-label {
+        width: 100%;
+    }
+
+    .add-product {
+        margin-left: 0 ;
+    }
+}
+
+@media (max-width: 425px) {
+    .input,
+    .input-label {
+        width: 17rem;
+    }
+}
